@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 import { ContentLogo } from "./LogoStyle"
 
 const Logo = () => {
   return(
-    <a><ContentLogo src="/logotopfloors.png" alt="Logo Principal" /></a>
+    <Link to='/'><ContentLogo src="/logotopfloors.png" alt="Logo Principal" /></Link>
   )
 }
 

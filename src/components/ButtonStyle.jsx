@@ -7,7 +7,7 @@ export const ContentButton = styled.button`
   cursor: pointer;
   transition: all.5s;
   &:hover{
-    background-color: var(--second-color);
+    background-color: transparent;
     border: 2px solid var(--first-color);
   }
   a{

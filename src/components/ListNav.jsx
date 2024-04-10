@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom"
 import { ContainerListNav } from "./ListNavStyle"
 
 const ListNav = () => {
   return(
     <ContainerListNav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li> <Link to= '/'>Home</Link> </li>
+        <li><Link to= '/aboutus'>About Us</Link> </li>
+        <li><Link to= '/contactus'>Contact Us</Link> </li>
+        <li><Link to= '#container-reviews'>Reviews</Link> </li>
       </ul>
     </ContainerListNav>
   )
