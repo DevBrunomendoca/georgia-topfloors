@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ContainerServices = styled.section`
   background-color: var(--first-color);
-  height: 800px;
 `
 
 export const ContentServices = styled.div`

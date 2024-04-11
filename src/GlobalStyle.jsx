@@ -23,16 +23,4 @@ body{
   background-color: var(--second-color);
 }
 
-.swiper.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden.mySwiper{
-  padding: 5rem 0 !important;
-}
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
-  top: 450px !important;
-}
-.swiper-pagination-bullet{
-  background-color: #CF9642;
-}
-.swiper-pagination-bullet-active{
-  background-color: #CF9642;
-}
 `
