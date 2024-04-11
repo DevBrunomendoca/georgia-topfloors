@@ -7,5 +7,5 @@ export const ContentTitle = styled.h1`
   font-weight: 600;
   max-width: 1060px;
   text-align:center;
-  
+  margin: 0 auto ;
 `
