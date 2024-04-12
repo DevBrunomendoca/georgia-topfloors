@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerAboutUs = styled.section`
-  margin: 0 auto;
   max-width: 1280px;
-  margin-top: 15rem;
+  margin :15rem auto 10rem;
 `
 
 export const ContentTextAbout = styled.div`
