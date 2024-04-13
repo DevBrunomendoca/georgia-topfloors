@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ContainerAboutUs = styled.section`
   max-width: 1280px;
   margin :15rem auto 10rem;
+  padding: 0 1rem;
+  @media (max-width: 768px) {
+    margin: 12rem auto 5rem;
+  }
 `
 
 export const ContentTextAbout = styled.div`

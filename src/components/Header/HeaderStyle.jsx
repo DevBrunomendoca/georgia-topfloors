@@ -16,4 +16,9 @@ export const ContentHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
+  @media (max-width:768px) {
+    nav, button {
+      display: none;
+    }
+  }
 `

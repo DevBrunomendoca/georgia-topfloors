@@ -4,8 +4,23 @@ import { ContainerSliderWork, ContainerWork, ContentSliderWork, ContentTextWork 
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { useEffect, useState } from "react";
 
 const SectionWork = () => {
+
+  const [sliderPerview, setSliderPerview] = useState(2)
+  useEffect(() => {
+    function handleResize() {
+      window.innerWidth < 768
+      ? setSliderPerview(1)
+      : setSliderPerview(2)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return() => {
+      window.removeEventListener('resize', handleResize)
+    }
+  },[])
   
   const data = [
     {id: '1', img: '/slider-work1.png' },
@@ -26,10 +41,10 @@ const SectionWork = () => {
       <ContainerSliderWork>
       <Swiper
         loop={true}
-        slidesPerView={2}
+        slidesPerView={sliderPerview}
         pagination={true}
         centeredSlides={false}
-        spaceBetween={30}
+        spaceBetween={10}
         autoplay={{
           delay: 3800,
           disableOnInteraction: false,

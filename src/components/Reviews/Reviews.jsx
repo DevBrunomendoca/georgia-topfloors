@@ -9,8 +9,26 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import ThirdTitle from "../ThirdTitle";
+import { useEffect, useState } from "react";
 
 const Reviews = () => {
+
+  const [sliderPerview, setSliderPerview] = useState(2)
+
+  useEffect(() => {
+    function handleResize() {
+      window.innerWidth < 768
+      ? setSliderPerview(1)
+      : setSliderPerview(2)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+
+    return() => {
+      window.removeEventListener('resize', handleResize)
+    }
+  },[])
+
   const data = [
     {
       id: "1",
@@ -51,9 +69,9 @@ const Reviews = () => {
       <ConteinerCardReview>
         <Swiper
           loop={true}
-          slidesPerView={2}
+          slidesPerView={sliderPerview}
           centeredSlides={false}
-          spaceBetween={30}
+          spaceBetween={10}
           autoplay={{
             delay: 3800,
             disableOnInteraction: false,

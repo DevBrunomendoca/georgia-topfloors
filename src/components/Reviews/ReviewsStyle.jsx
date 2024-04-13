@@ -8,6 +8,9 @@ export const ContainerReviews = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `
 
 export const ConteinerCardReview = styled.div`

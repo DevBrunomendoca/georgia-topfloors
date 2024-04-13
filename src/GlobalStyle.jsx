@@ -18,6 +18,9 @@ export const GlobalStyle = createGlobalStyle`
 
 html{
   font-size: 62.5%;
+  @media (max-width: 768px) {
+    font-size: 56%;
+  }
 }
 body{
   background-color: var(--second-color);

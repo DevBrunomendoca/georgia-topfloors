@@ -8,8 +8,25 @@ import { Autoplay } from "swiper/modules";
 import { ContainerTeam, ContentTeam } from "./TeamStyle";
 import SecondTitle from "../../components/SecondTitle";
 import Team from "./Team";
+import { useEffect, useState } from "react";
 
 const AboutUs = () => {
+
+  const [sliderPerview, setSliderPerview] = useState(2)
+
+  useEffect(() => {
+    function handleResize() {
+      window.innerWidth < 768
+      ? setSliderPerview(1)
+      : setSliderPerview(2)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return() => {
+      window.removeEventListener('resize', handleResize)
+    }
+  },[])
+
   const sliderAbout = [
     { id: "1", imgSlider: "/banner-about-us1.png" },
     { id: "2", imgSlider: "/banner-about-us2.png" },
@@ -27,9 +44,9 @@ const AboutUs = () => {
       <ContentSliderAbout>
         <Swiper
         loop={true}
-        slidesPerView={2}
+        slidesPerView={sliderPerview}
         centeredSlides={false}
-        spaceBetween={30}
+        spaceBetween={10}
         autoplay={{
           delay: 3800,
           disableOnInteraction: false,

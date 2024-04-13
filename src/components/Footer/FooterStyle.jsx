@@ -3,12 +3,17 @@ import styled from "styled-components";
 export const ContaienerFooter = styled.footer`
   margin: 0 auto;
   max-width: 1280px;
+  padding: 5rem 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
   h3{
     color: var(--third-color)
+  }
+  @media (max-width: 768px) {
+    padding: 2rem 1rem 1rem;
+    gap: 2rem;
   }
 `
 
@@ -18,6 +23,11 @@ export const ContentFooter = styled.div`
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 `
 
 export const ContainerSocial = styled.div`
@@ -43,6 +53,11 @@ export const SocialMedia = styled.div`
   div>a{
     width: 64px;
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  gap: 4rem;
+  }
+  
 `
 
 

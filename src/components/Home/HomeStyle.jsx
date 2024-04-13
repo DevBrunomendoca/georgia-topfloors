@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const ContainerHome = styled.section`
   background: url('/banner-home(1).png') center;
@@ -6,6 +6,13 @@ export const ContainerHome = styled.section`
   min-height: 950px;
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    min-height: 650px;
+  }
+  ${({bannerMobile}) => bannerMobile && css`
+    background: url('/banner-home-mobile.png') center no-repeat;
+    background-size: cover;
+  `}
 `
 
 export const ContentHome = styled.div`

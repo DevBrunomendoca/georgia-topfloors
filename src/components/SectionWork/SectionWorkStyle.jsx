@@ -6,13 +6,20 @@ export const ContainerWork = styled.section`
   padding: 10rem 1rem 5rem;
 
   .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper{
-  padding: 5rem 0 !important;
+  padding: 5rem 0;
 }
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
-  top: 450px !important;
+  //top: 450px;
+  bottom: 5%;
 }
 .swiper-pagination-bullet,  .swiper-pagination-bullet-active{
   background-color: #CF9642;
+  width: 10px;
+  height: 10px;
+  
+}
+@media (max-width: 768px) {
+  padding: 2rem 1rem ;
 }
 `
 

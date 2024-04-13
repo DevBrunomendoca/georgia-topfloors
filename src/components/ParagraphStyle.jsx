@@ -7,4 +7,7 @@ export const ContentParagraph = styled.p`
   max-width: 1060px;
   text-align: center;
   color: var(--third-color);
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 `

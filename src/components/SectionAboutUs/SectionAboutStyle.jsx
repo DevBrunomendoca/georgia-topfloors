@@ -13,7 +13,7 @@ export const ContentAbout = styled.div`
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding-top: 18rem;
+  padding: 18rem 1rem 0;
   h2, p{
     color: var(--second-color);
     max-width: 850px;
