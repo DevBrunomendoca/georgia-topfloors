@@ -8,15 +8,15 @@ const Services = () => {
       <ContentServices>
         <CardServices
           titleCard='Installation'
-          imgCard='/vite-react-router/banner-services1.png'
+          imgCard='/banner-services1.png'
         />
         <CardServices
           titleCard='Sand and Finish'
-          imgCard='/vite-react-router/banner-services2.png'
+          imgCard='/banner-services2.png'
         />
         <CardServices
           titleCard='Staircases'
-          imgCard='/vite-react-router/banner-services3.png'
+          imgCard='/banner-services3.png'
         />
 
       </ContentServices>

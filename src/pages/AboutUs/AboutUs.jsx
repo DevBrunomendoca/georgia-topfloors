@@ -28,10 +28,10 @@ const AboutUs = () => {
   },[])
 
   const sliderAbout = [
-    { id: "1", imgSlider: "/vite-react-router/banner-about-us1.png" },
-    { id: "2", imgSlider: "/vite-react-router/banner-about-us2.png" },
-    { id: "3", imgSlider: "/vite-react-router/banner-about-us3.png" },
-    { id: "4", imgSlider: "/vite-react-router/banner-about-us4.png" },
+    { id: "1", imgSlider: "/banner-about-us1.png" },
+    { id: "2", imgSlider: "/banner-about-us2.png" },
+    { id: "3", imgSlider: "/banner-about-us3.png" },
+    { id: "4", imgSlider: "/banner-about-us4.png" },
   ];
 
   return (
@@ -65,32 +65,32 @@ const AboutUs = () => {
         <SecondTitle textSecondTitle='Meet The Team'/> 
         <ContentTeam>
         <Team 
-          profile='/vite-react-router/profile1.png'
+          profile='/profile1.png'
           name='Cristiano Santos'
           description='Chief Executive Officer'
         />
         <Team 
-          profile='/vite-react-router/profile2.png'
+          profile='/profile2.png'
           name='Alicia Santos'
           description='Chief Operating Officer'
         />
         <Team 
-          profile='/vite-react-router/profile3.png'
+          profile='/profile3.png'
           name='Andre Dias'
           description='Director of Operations'
         />
         <Team 
-          profile='/vite-react-router/profile4.png'
+          profile='/profile4.png'
           name='Isaque William'
           description='Team Leader'
         />
         <Team 
-          profile='/vite-react-router/profile5.png'
+          profile='/profile5.png'
           name='Carlos Costa'
           description='Team Leader'
         />
         <Team 
-          profile='/vite-react-router/profile6.png'
+          profile='/profile6.png'
           name='Camilla Vieira'
           description='Executive Secretary'
         />

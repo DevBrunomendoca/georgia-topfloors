@@ -20,17 +20,17 @@ const Footer = () => {
           <Paragraph textParagraph="Follow us and stay updated with all the latest projects and news" />
           <SocialMedia>
             <div>
-              <a href=""> <img src="/vite-react-router/icon-facebook.png" alt="Icon Facebook" /> </a>
+              <a href=""> <img src="/icon-facebook.png" alt="Icon Facebook" /> </a>
               
               <Paragraph textParagraph="Facebook" />
             </div>
             <div>
-              <a href=""> <img src="/vite-react-router/icon-instagram.png" alt="Icone Instagram" /></a>
+              <a href=""> <img src="/icon-instagram.png" alt="Icone Instagram" /></a>
               
               <Paragraph textParagraph="Instagram" />
             </div>
             <div>
-              <a href=""> <img src="/vite-react-router/icon-google.png" alt="Icone Google" /> </a>
+              <a href=""> <img src="/icon-google.png" alt="Icone Google" /> </a>
               
               <Paragraph textParagraph="Google" />
             </div>

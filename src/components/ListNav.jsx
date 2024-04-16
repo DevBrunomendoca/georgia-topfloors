@@ -7,9 +7,9 @@ const ListNav = () => {
   return(
     <ContainerListNav>
       <ul>
-        <li> <Link to='/vite-react-router/'>Home</Link> </li>
-        <li> <Link to='/vite-react-router/about'>About Us</Link> </li>
-        <li> <Link to='/vite-react-router/contact'>Contact Us</Link> </li>
+        <li> <Link to='/'>Home</Link> </li>
+        <li> <Link to='/about'>About Us</Link> </li>
+        <li> <Link to='/contact'>Contact Us</Link> </li>
         
         <li><a href="#container-reviews">Reviews</a></li>
       </ul>

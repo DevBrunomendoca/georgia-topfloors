@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerAbout = styled.section`
   min-height: 550px;
-  background: linear-gradient(180deg, rgba(207,150,66,1) 3%, rgba(207,150,66,0.2049194677871149) 92%) , url('/vite-react-router/banner-about.png') center ;
+  background: linear-gradient(180deg, rgba(207,150,66,1) 3%, rgba(207,150,66,0.2049194677871149) 92%) , url('/banner-about.png') center ;
   background-size: cover;
 `
 

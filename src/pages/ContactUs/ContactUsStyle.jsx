@@ -41,7 +41,7 @@ export const ContentTextAddress = styled.div`
 `
 
 export const ContentBannerAddress = styled.div`
-  background: url('/vite-react-router/banner-address.png') center;
+  background: url('/banner-address.png') center;
   background-size: cover;
   min-height: 630px;
   width: 50%;

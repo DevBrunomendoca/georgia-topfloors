@@ -32,7 +32,7 @@ const Reviews = () => {
   const data = [
     {
       id: "1",
-      imgProfile: "/vite-react-router/perfil-profile1.png",
+      imgProfile: "/perfil-profile1.png",
       namePerson: "Dennis Ficco",
       coment:
         "The workers were super friendly and cooperative. My wife has a super critical eye and not only did they respond to all her requests, but they did everything above her expectations. Just a great experience.",
@@ -40,7 +40,7 @@ const Reviews = () => {
 
     {
       id: "2",
-      imgProfile: "/vite-react-router/perfil-profile2.png",
+      imgProfile: "/perfil-profile2.png",
       namePerson: "Beth Kelley",
       coment:
         "I had a repair that was needing to be done, because of water damage. The guys came right when they said they were and did a fantastic job! I was very impressed. Thanks Georgia Top Floors.",
@@ -48,7 +48,7 @@ const Reviews = () => {
 
     {
       id: "3",
-      imgProfile: "/vite-react-router/perfil-profile1.png",
+      imgProfile: "/perfil-profile1.png",
       namePerson: "Dennis Ficco",
       coment:
         "The workers were super friendly and cooperative. My wife has a super critical eye and not only did they respond to all her requests, but they did everything above her expectations. Just a great experience.",
@@ -56,7 +56,7 @@ const Reviews = () => {
 
     {
       id: "4",
-      imgProfile: "/vite-react-router/perfil-profile2.png",
+      imgProfile: "/perfil-profile2.png",
       namePerson: "Beth Kelley",
       coment:
         "I had a repair that was needing to be done, because of water damage. The guys came right when they said they were and did a fantastic job! I was very impressed. Thanks Georgia Top Floors.",

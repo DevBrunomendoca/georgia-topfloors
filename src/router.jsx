@@ -6,7 +6,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
-    path: "/vite-react-router/",
+    path: "/",
     element: <RootLayout />,
     children: [
       {
@@ -14,11 +14,11 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: '/vite-react-router/about',
+        path: '/about',
         element: <AboutUs />
       },
       {
-        path: '/vite-react-router/contact',
+        path: '/contact',
         element: <ContactUs />
       }
     ]

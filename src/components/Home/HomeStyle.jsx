@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const ContainerHome = styled.section`
-  background: url('/vite-react-router/banner-home(1).png') center;
+  background: url('/banner-home(1).png') center;
   background-size: cover;
   min-height: 950px;
   display: flex;
@@ -10,7 +10,7 @@ export const ContainerHome = styled.section`
     min-height: 650px;
   }
   ${({bannerMobile}) => bannerMobile && css`
-    background: url('/vite-react-router/banner-home-mobile.png') center no-repeat;
+    background: url('/banner-home-mobile.png') center no-repeat;
     background-size: cover;
   `}
 `
