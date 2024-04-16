@@ -23,12 +23,12 @@ const SectionWork = () => {
   },[])
   
   const data = [
-    {id: '1', img: '/slider-work1.png' },
-    {id: '2', img: '/slider-work2.png' },
-    {id: '3', img: '/slider-work3.png' },
-    {id: '4', img: '/slider-work4.png' },
-    {id: '5', img: '/slider-work5.png' },
-    {id: '6', img: '/slider-work6.png' },
+    {id: '1', img: '/vite-react-router/slider-work1.png' },
+    {id: '2', img: '/vite-react-router/slider-work2.png' },
+    {id: '3', img: '/vite-react-router/slider-work3.png' },
+    {id: '4', img: '/vite-react-router/slider-work4.png' },
+    {id: '5', img: '/vite-react-router/slider-work5.png' },
+    {id: '6', img: '/vite-react-router/slider-work6.png' },
 
   ] 
 

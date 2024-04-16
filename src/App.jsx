@@ -1,19 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import ContactUs from "./pages/ContactUs/ContactUs";
-import HomePage from "./pages/HomePage/HomePage";
-import AboutUs from "./pages/AboutUs/AboutUs";
+import Header from "../src/components/Header/Heade"
+import HomePage from "../src/pages/HomePage/HomePage"
+import Footer from "../src/components/Footer/Footer"
+import { RouterProvider } from "react-router-dom"
+import router from "./router"
 
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/contactus" element={<ContactUs />}/>
-        <Route path="/aboutus" element={<AboutUs />}/>
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router}/>
   )
 }
 

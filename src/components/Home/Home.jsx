@@ -25,7 +25,7 @@ const Home = () => {
       <ContentHome  >
         <h3>Welcome Georgia Top Floors</h3>
         <Title textTitle="Dream it up and we will make it a reality!" />
-        <ButtonRout textButton='Contact Us' link='/contactus'/>
+        <ButtonRout textButton='Contact Us' link='/vite-react-router/contact'/>
       </ContentHome>
     </ContainerHome>
   );
