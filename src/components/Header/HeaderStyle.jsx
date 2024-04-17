@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const ContainerHeader = styled.header`
   background-color: rgba(255, 255, 255, 0.8);
@@ -7,6 +7,11 @@ export const ContainerHeader = styled.header`
   top: 0;
   width: 100%;
   z-index: 101;
+  display: flex;
+  align-items: center;
+  ${({openMenu}) => openMenu && css`
+  background-color: var(--second-color);
+  `}
 `
 export const ContentHeader = styled.div`
   max-width: 1280px;
