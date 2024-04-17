@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import { ContentButton } from "./ButtonStyle"
 
-const ButtonRout = ({link, textButton}) => {
+const ButtonRout = ({id, link, textButton}) => {
   return(
-    <ContentButton> <Link to={link}>{textButton}</Link> </ContentButton>
+    <ContentButton id={id}> <Link to={link}>{textButton}</Link> </ContentButton>
 
   )
 }

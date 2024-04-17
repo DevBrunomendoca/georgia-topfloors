@@ -1,8 +1,8 @@
 import { ContentSecondTitle } from "./SecondTitleStyle"
 
-const SecondTitle = ({textSecondTitle}) => {
+const SecondTitle = ({id, textSecondTitle}) => {
   return(
-    <ContentSecondTitle>{textSecondTitle}</ContentSecondTitle>
+    <ContentSecondTitle id={id}>{textSecondTitle}</ContentSecondTitle>
   )
 }
 

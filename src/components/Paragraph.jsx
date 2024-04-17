@@ -1,8 +1,8 @@
 import { ContentParagraph } from "./ParagraphStyle"
 
-const Paragraph = ({textParagraph}) => {
+const Paragraph = ({id, textParagraph}) => {
   return(
-    <ContentParagraph>{textParagraph}</ContentParagraph>
+    <ContentParagraph id={id}>{textParagraph}</ContentParagraph>
   )
 }
 

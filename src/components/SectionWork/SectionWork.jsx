@@ -2,11 +2,58 @@ import Paragraph from "../Paragraph"
 import SecondTitle from "../SecondTitle"
 import { ContainerSliderWork, ContainerWork, ContentSliderWork, ContentTextWork } from "./SectionWorkStyle"
 
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { useEffect, useState } from "react";
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const SectionWork = () => {
+  
+  const tl = useRef(null)
+  const el = useRef(null)
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#container-work',
+          start: "300px bottom"
+        }
+      })
+      .fromTo('#second-title-work', {
+          opacity: 0,
+          y: 160,
+        }, {
+          opacity: 1,
+          duration: 1,
+          y: 0
+        })
+      .fromTo('#paragraph-work', {
+          opacity: 0,
+          y: 80,
+        }, {
+          opacity: 1,
+          duration: 1,
+          y: 0
+        })
+      .fromTo('#slider-work', {
+          opacity: 0,
+          y: 80,
+        }, {
+          opacity: 1,
+          duration: 1,
+          y: 0
+        })
+        
+    })
+    return () => {
+      gsap.killTweensOf("#container-work")
+    }
+  },[])
 
   const [sliderPerview, setSliderPerview] = useState(2)
   useEffect(() => {
@@ -33,12 +80,12 @@ const SectionWork = () => {
   ] 
 
   return(
-    <ContainerWork>
+    <ContainerWork ref={el} id="container-work">
       <ContentTextWork>
-        <SecondTitle textSecondTitle='What we love to do'/>
-        <Paragraph textParagraph='We install unfinished and prefinished hardwoods, luxury vinyl Plank (LVP), luxury vinyl tile (LVT), laminate, and engineered floors. In addition, we refinish all types of hardwood floors. Our expert team is also specialized in installing and refinishing staircases.'/>
+        <SecondTitle id='second-title-work' textSecondTitle='What we love to do'/>
+        <Paragraph id='paragraph-work' textParagraph='We install unfinished and prefinished hardwoods, luxury vinyl Plank (LVP), luxury vinyl tile (LVT), laminate, and engineered floors. In addition, we refinish all types of hardwood floors. Our expert team is also specialized in installing and refinishing staircases.'/>
       </ContentTextWork>
-      <ContainerSliderWork>
+      <ContainerSliderWork id="slider-work">
       <Swiper
         loop={true}
         slidesPerView={sliderPerview}

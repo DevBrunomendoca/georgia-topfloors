@@ -1,8 +1,8 @@
 import { ContentTitle } from "./TitleStyle"
 
-const Title = ({textTitle}) => {
+const Title = ({id, textTitle}) => {
   return(
-    <ContentTitle>{textTitle}</ContentTitle>
+    <ContentTitle id={id}>{textTitle}</ContentTitle>
   )
 }
 

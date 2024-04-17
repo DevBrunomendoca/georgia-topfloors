@@ -4,11 +4,52 @@ import ThirdTitle from "../../components/ThirdTitle";
 import Title from "../../components/Title";
 import { ContainerAddress, ContainerContactUs, ContainerLocation, ContentBannerAddress, ContentTextAddress } from "./ContactUsStyle";
 
+import { useLayoutEffect, useRef } from "react";
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 const ContactUs = () => {
+
+  const tl = useRef(null)
+  const el = useRef(null)
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#container-contact',
+          start: "300px bottom"
+        }
+      })
+      .fromTo('#title-contact', {
+          opacity: 0,
+          y: 160,
+        }, {
+          opacity: 1,
+          duration: 1.4,
+          y: 0
+        })
+      .fromTo('#container-address', {
+          opacity: 0,
+          y: 80,
+        }, {
+          opacity: 1,
+          duration: 1.4,
+          y: 0
+        })
+        
+    })
+    return () => {
+      gsap.killTweensOf("#container-contact")
+    }
+  },[])
+
   return (
-    <ContainerContactUs>
-      <Title textTitle='Contact Us'/>
-      <ContainerAddress>
+    <ContainerContactUs id="container-contact" ref={el}>
+      <Title id='title-contact' textTitle='Contact Us'/>
+      <ContainerAddress id="container-address">
         <ContentTextAddress>
           <div>
             <ThirdTitle textThirdTitle='Address'/>

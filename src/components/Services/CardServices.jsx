@@ -1,9 +1,9 @@
 import ThirdTitle from "../ThirdTitle"
 import { ContentCardServices } from "./CardServicesStyle"
 
-const CardServices = ({titleCard, imgCard}) => {
+const CardServices = ({id,titleCard, imgCard}) => {
   return(
-    <ContentCardServices>
+    <ContentCardServices id={id}>
       <ThirdTitle textThirdTitle={titleCard}/>
       <img src={imgCard} alt="Image Card Services" />
     </ContentCardServices>

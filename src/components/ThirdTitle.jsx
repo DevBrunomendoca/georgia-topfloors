@@ -1,8 +1,8 @@
 import { ContentThidTitle } from "./ThirdTitleStyle"
 
-const ThirdTitle = ({textThirdTitle}) => {
+const ThirdTitle = ({id, textThirdTitle}) => {
   return(
-    <ContentThidTitle>{textThirdTitle}</ContentThidTitle>
+    <ContentThidTitle id={id}>{textThirdTitle}</ContentThidTitle>
   )
 }
 
