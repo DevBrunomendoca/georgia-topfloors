@@ -21,7 +21,7 @@ const Staircases = () => {
         centeredSlides={false}
         spaceBetween={10}
         autoplay={{
-          delay: 3800,
+          delay: 3400,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}

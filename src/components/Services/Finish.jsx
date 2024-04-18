@@ -21,7 +21,7 @@ const Finish = () => {
         centeredSlides={false}
         spaceBetween={10}
         autoplay={{
-          delay: 3800,
+          delay: 3600,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
