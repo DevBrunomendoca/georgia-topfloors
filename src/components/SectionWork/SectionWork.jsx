@@ -93,7 +93,7 @@ const SectionWork = () => {
         centeredSlides={false}
         spaceBetween={10}
         autoplay={{
-          delay: 3800,
+          delay: 4200,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination ]}

@@ -21,7 +21,7 @@ const Installation = () => {
         centeredSlides={false}
         spaceBetween={10}
         autoplay={{
-          delay: 3800,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
