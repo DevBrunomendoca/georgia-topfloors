@@ -6,7 +6,7 @@ const MenuToggle = ({openMenu, toggleMenu}) => {
   return(
     <ContentMenuToggle openMenu={openMenu}>
       <ListNav onClick={toggleMenu}/>
-      <Button onClick={toggleMenu} textButton="Call or Text"/>
+      <Button  hrefBtn='tel:+17708007008' onClick={toggleMenu} textButton="Call or Text"/>
     </ContentMenuToggle>
   ) 
 }

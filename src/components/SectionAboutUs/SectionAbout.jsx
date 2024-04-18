@@ -3,7 +3,7 @@ import Paragraph from "../Paragraph"
 import SecondTitle from "../SecondTitle"
 import { ContainerAbout, ContentAbout } from "./SectionAboutStyle"
 
-import { useLayoutEffect, useRef } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -18,7 +18,7 @@ const SectionAbout = () => {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: '#container-aboutus',
-          start: "300px bottom"
+          start: "400px bottom"
         }
       })
       .fromTo('#content-aboutus', {
@@ -26,7 +26,7 @@ const SectionAbout = () => {
           y: 160,
         }, {
           opacity: 1,
-          duration: 1.4,
+          duration: 1.6,
           y: 0
         })
     })
@@ -35,8 +35,25 @@ const SectionAbout = () => {
     }
   },[])
 
+  const [bannerMobile, setBannerMobile] = useState(false)
+
+  useEffect(() => {
+    function handleResize() {
+      window.innerWidth < 768
+      ? setBannerMobile(true)
+      : setBannerMobile(false)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    
+    return() => {
+      window.removeEventListener('resize', handleResize)
+    }
+  })
+
+
   return(
-    <ContainerAbout id="container-aboutus" ref={el}>
+    <ContainerAbout bannerMobile={bannerMobile} id="container-aboutus" ref={el}>
       <ContentAbout id="content-aboutus">
       <SecondTitle textSecondTitle='About Us'/>
       <Paragraph textParagraph='Georgia Top Floors is a Family owned business, that truly values our clients and our crews. They really are the company and we take pride in taking care of their needs. '/>

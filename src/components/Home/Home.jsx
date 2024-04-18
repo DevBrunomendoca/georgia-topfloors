@@ -57,8 +57,8 @@ const Home = () => {
   useEffect(() => {
     function handleResize() {
       window.innerWidth < 480
-      ? setbannerMobile(true)
-      : setbannerMobile(false)
+      && setbannerMobile(true)
+      
     }
     handleResize()
     window.addEventListener('resize' , handleResize)

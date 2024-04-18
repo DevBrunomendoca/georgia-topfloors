@@ -31,7 +31,7 @@ export const ContentHome = styled.div`
     margin-bottom: -3rem;
   }
   button{
-    padding: .80rem 9rem;
+    padding: 0;
     &:hover{ 
       background-color: var(--second-color);
       border: 2px solid var(--second-color);

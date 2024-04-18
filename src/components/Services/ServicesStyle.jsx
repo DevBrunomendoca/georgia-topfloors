@@ -11,9 +11,6 @@ export const ContentServices = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 4rem;
-  }
+  
 
 `

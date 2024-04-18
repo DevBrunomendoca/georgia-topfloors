@@ -29,7 +29,7 @@ const Header = () => {
       <ContentHeader>
         <Logo />
         <ListNav />
-        <Button textButton="Call or Text" />
+        <Button hrefBtn='tel:+17708007008' textButton="Call or Text" />
       </ContentHeader>
       <IconMenu openMenu={openMenu} toggleMenu={toggleMenu}/>
       {openMenu && <MenuToggle openMenu={openMenu} toggleMenu={toggleMenu}/> }

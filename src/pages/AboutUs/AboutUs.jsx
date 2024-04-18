@@ -45,7 +45,7 @@ const AboutUs = () => {
         })
       .fromTo('#slider-about', {
           opacity: 0,
-          y: -80,
+          y: 80,
         }, {
           opacity: 1,
           duration: 1.4,

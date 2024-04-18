@@ -29,7 +29,7 @@ const SectionWork = () => {
           y: 160,
         }, {
           opacity: 1,
-          duration: 1,
+          duration: 1.4,
           y: 0
         })
       .fromTo('#paragraph-work', {
@@ -37,7 +37,7 @@ const SectionWork = () => {
           y: 80,
         }, {
           opacity: 1,
-          duration: 1,
+          duration: 1.4,
           y: 0
         })
       .fromTo('#slider-work', {
@@ -45,7 +45,7 @@ const SectionWork = () => {
           y: 80,
         }, {
           opacity: 1,
-          duration: 1,
+          duration: 1.4,
           y: 0
         })
         

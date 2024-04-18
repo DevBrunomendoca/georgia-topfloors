@@ -1,8 +1,8 @@
 import { ContentButton } from "./ButtonStyle"
 
-const Button = ({textButton, onClick}) => {
+const Button = ({hrefBtn, textButton, onClick}) => {
   return(
-    <ContentButton onClick={onClick}><a href="#">{textButton}</a></ContentButton>
+    <ContentButton onClick={onClick}><a href={hrefBtn}>{textButton}</a></ContentButton>
   )
 }
 
