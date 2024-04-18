@@ -4,7 +4,7 @@ import ThirdTitle from "../ThirdTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-const Finish = () => {
+const Finish = ({id}) => {
 
   const finish = [
     {id: '1', img: 'finish1.png' },
@@ -13,7 +13,7 @@ const Finish = () => {
   ]
 
   return(
-    <SlideFinish>  
+    <SlideFinish id={id}>  
       <ThirdTitle textThirdTitle='Sand and Finish'/>
       <Swiper 
         loop={true}

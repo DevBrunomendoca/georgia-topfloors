@@ -19,11 +19,11 @@ const CardServices = ({id,titleCard, imgCard}) => {
     gsap.context(() => {
       tl.current = gsap.timeline({
         scrollTrigger: {
-          trigger: '#container-services',
+          trigger: '#container-servises',
           start: "300px bottom"
         }
       })
-      .fromTo('#card-one', {
+      .fromTo('#slider-instalation', {
           opacity: 0,
           x: -100,
         }, {
@@ -31,7 +31,7 @@ const CardServices = ({id,titleCard, imgCard}) => {
           duration: 1.4,
           x: 0
         })
-      .fromTo('#card-two', {
+      .fromTo('#slider-finish', {
           opacity: 0,
           x: -100,
         }, {
@@ -39,7 +39,7 @@ const CardServices = ({id,titleCard, imgCard}) => {
           duration: 1.4,
           x: 0
         })
-      .fromTo('#card-three', {
+      .fromTo('#slider-staircases', {
           opacity: 0,
           x: -100,
         }, {
@@ -50,16 +50,16 @@ const CardServices = ({id,titleCard, imgCard}) => {
         
     })
     return () => {
-      gsap.killTweensOf("#container-services")
+      gsap.killTweensOf("#container-servises")
     }
   },[])
 
 
   return(
-    <ContentCardServices ref={el} id={id}>
-        <Installation />
-        <Finish />
-        <Staircases />
+    <ContentCardServices ref={el} id='container-servises'>
+        <Installation id='slider-instalation'/>
+        <Finish id='slider-finish'/>
+        <Staircases id='slider-staircases'/>
     </ContentCardServices>
   )
 }

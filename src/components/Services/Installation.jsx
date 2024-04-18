@@ -4,7 +4,7 @@ import ThirdTitle from "../ThirdTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-const Installation = () => {
+const Installation = ({id}) => {
 
   const installation = [
     {id: '1', img: 'installation1.png' },
@@ -13,7 +13,7 @@ const Installation = () => {
   ]
 
   return (
-    <SlideInstallation>
+    <SlideInstallation id={id}>
       <ThirdTitle textThirdTitle='Installation'/>
       <Swiper 
         loop={true}

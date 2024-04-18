@@ -18,7 +18,7 @@ const SectionAbout = () => {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: '#container-aboutus',
-          start: "400px bottom"
+          start: "450px bottom"
         }
       })
       .fromTo('#content-aboutus', {

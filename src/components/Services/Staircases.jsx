@@ -4,7 +4,7 @@ import ThirdTitle from "../ThirdTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-const Staircases = () => {
+const Staircases = ({id}) => {
 
   const staircases = [
     {id: '1', img: 'staircases1.png'},
@@ -13,7 +13,7 @@ const Staircases = () => {
   ]
 
   return(
-    <SlideStaircases> 
+    <SlideStaircases id={id}> 
       <ThirdTitle textThirdTitle='Staircases'/>
       <Swiper 
         loop={true}
